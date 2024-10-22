@@ -1,0 +1,132 @@
+.features {
+  text-align: center;
+  background-color: white;
+}
+
+.features__badge {
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 56px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr; // Мобильная версия: 1 колонна
+  gap: 32px; // Промежуток между элементами (можно настроить)
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    // Таблет: 2 колонны, 2 линии
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // Десктоп: 4 колонны, 1 линия
+    grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: 1fr; // 1 линия
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  min-height: 142px;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  padding-top: 64px;
+  background-position: 80 center;
+
+  @media (min-width: $tablet-width) {
+    width: 339px;
+    min-height: 94px;
+    padding: 0;
+    padding-left: 72px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    min-height: 170px;
+  }
+}
+
+.features__item--speed {
+  background-image: url('../../icons/stack.svg#feature-speed');
+  background-repeat: no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    min-height: 170px;
+  }
+}
+
+.features__item--fit {
+  background-image: url('../../icons/stack.svg#feature-fit');
+  background-repeat: no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    min-height: 170px;
+  }
+}
+
+.features__item--energy {
+  background-image: url('../../icons/stack.svg#feature-energy');
+  background-repeat: no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    min-height: 170px;
+  }
+}
+
+.features__item--ecology {
+  background-image: url('../../icons/stack.svg#feature-ecology');
+  background-repeat: no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    min-height: 170px;
+  }
+}
+
+.features__item--title {
+  margin: 0;
+  padding: 0;
+}
+
+.features__description {
+  margin: 0;
+}

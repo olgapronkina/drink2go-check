@@ -1,0 +1,40 @@
+.milk-adder__filter {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.milk-adder__title {
+}
+
+.milk-adder__list {
+  padding: 0;
+}
+
+.milk-adder__item {
+}
+
+.milk-adder__item input {
+  display: none;
+}
+
+.milk-adder__item[type='radio'] + .milk-adder__mark {
+  border-radius: 50%;
+}
+
+.milk-adder__item[type='radio']:checked + .milk-adder__mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: '';
+}
+
+.milk-adder__mark {
+}
+
+.milk-adder__label {
+}

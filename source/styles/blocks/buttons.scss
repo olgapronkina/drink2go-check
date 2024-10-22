@@ -1,0 +1,25 @@
+.button {
+  font: inherit;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  // padding: 15px 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 36px;
+}
+
+.primary-button {
+  background-color: $base-primary;
+}
+
+.secondary-button {
+  color: $base-primary;
+  background-color: $base-white;
+}

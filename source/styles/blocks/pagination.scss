@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 80px;
+}
+
+.pagination__item a {
+  font-weight: 400;
+  display: block;
+  padding: 12px 18px;
+  min-width: 60px;
+  min-height: 60px;
+  line-height: 36px;
+  font-size: 20px;
+}
+
+.pagination__current {
+  font-weight: 600;
+  color: $base-black;
+  background-color: transparent;
+}

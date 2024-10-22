@@ -1,0 +1,29 @@
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .map__container {
+//   display: flex;
+//   align-items: center;
+// }
+
+.map img {
+  display: block;
+  width: 320px;
+  height: 420px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 768px;
+    height: 480px;
+    // margin: 0 auto;
+    // margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 540px;
+    // margin-top: 57px;
+  }
+}

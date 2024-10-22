@@ -1,0 +1,14 @@
+.footer {
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__wrapper {
+  display: flex;
+}

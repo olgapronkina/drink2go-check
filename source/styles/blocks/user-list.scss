@@ -1,0 +1,74 @@
+.user-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  width: 120px;
+}
+
+.user-list__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex; /* Чтобы SVG и текст были в одной строке */
+    align-items: center;
+    position: relative; /* Центрашируем по вертикали */
+  }
+
+  .user-list__item--login {
+    width: 98px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 260px;
+  }
+
+  .user-list__login--text {
+    margin-left: 8px;
+  }
+}
+
+.user-list__login,
+.user-list__basket {
+  display: flex;
+  align-items: center;
+}
+
+.user-list__item--basket {
+  @media (min-width: $tablet-width) {
+    width: 130px;
+  }
+}
+
+.user-list__login {
+  display: flex; /* Чтобы SVG и текст были в одной строке */
+  align-items: center;
+  position: relative; /* Центрашируем по вертикали */
+}
+
+.user-list__login--img {
+  display: block;
+}
+
+.user-list__login--text {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__login--img {
+    display: block; /* Показываем иконку на десктопной версии */
+  }
+
+  .user-list__login--text {
+    display: inline; /* Показываем текст только на десктопной версии */
+    margin-left: 8px; /* Отступ между SVG и текстом */
+  }
+}

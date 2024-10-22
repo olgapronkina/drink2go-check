@@ -1,7 +1,26 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
+@import './common/variables.scss';
+@import './common/global.scss';
+@import './common/fonts.scss';
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import './blocks/page.scss';
+@import './blocks/header.scss';
+@import './blocks/slider.scss';
+@import './blocks/features.scss';
+@import './blocks/catalog.scss';
+@import './blocks/country-filter.scss';
+@import './blocks/milk-filter';
+@import './blocks/catalog-form';
+@import './blocks/pagination.scss';
+@import './blocks/map.scss';
+@import './blocks/footer.scss';
+@import './blocks/buttons.scss';
+@import './blocks/badge.scss';
+@import './blocks/navigation.scss';
+@import './blocks/site-list.scss';
+@import './blocks/user-list.scss';
+@import './blocks/features.scss';
+@import './blocks/range.scss';
+
+@import './blocks/social.scss';

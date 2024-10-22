@@ -1,0 +1,11 @@
+@import '../common/variables.scss';
+
+.badge {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $base-primary;
+  min-height: 16px;
+}

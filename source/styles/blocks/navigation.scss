@@ -1,0 +1,109 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $base-white;
+  cursor: pointer;
+  border: none;
+
+  &:active {
+    background-color: $base-secondary;
+  }
+}
+
+.nav__wrapper {
+  display: flex;
+  flex-direction: column; // По умолчанию для мобильной версии
+  position: relative;
+}
+
+// @media (max-width: $mobile-width-only) {
+//   .nav--closed .site-list__item {
+//     display: none;
+
+//     &--active {
+//       display: block;
+//     }
+//   }
+
+//   .nav--closed .site-list__item--active a {
+//     padding-right: 70px;
+//     padding-left: 70px;
+//     text-align: center;
+//   }
+
+//   .nav--closed .user-list__item {
+//     display: none;
+//   }
+
+//   .main-nav--opened .main-nav__wrapper {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 70px;
+//     z-index: 10;
+//     min-height: 80vh;
+//     background-color: $base-white;
+//   }
+
+//   .nav--opened .nav__wrapper::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+//     width: 7px;
+//     height: 100%;
+//     box-shadow: inset 4px 0 7px -2px opacify($base-black 0.4);
+//   }
+// }
+
+@media (min-width: $tablet-width) {
+  .nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+.nav__toggle.is-active {
+  background-image: url('../../images/icons/cross.svg');
+  background-repeat: no-repeat; // Путь к изображению крестика
+}
+
+@media (min-width: $desktop-width) {
+  .nav__wrapper {
+    width: 882px;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list a {
+  color: $base-black;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+}

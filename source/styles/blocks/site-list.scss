@@ -1,0 +1,48 @@
+// .site-list {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0;
+//   padding: 0;
+//   flex-wrap: wrap;
+//   align-items: center;
+// }
+.site-list {
+  display: none;
+}
+
+.site-list__item {
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid $base-secondary;
+  border-bottom: 1px solid $base-secondary;
+}
+
+.site-list--open {
+  display: block; // Показываем site-list, когда он открыт
+  position: absolute; // Позиционируем по желанию
+  top: 100%; // Под кнопкой бургер
+  left: 0;
+  right: 0;
+  background: white; // Задать фон для списка
+  z-index: 10; // Убедитесь, что он поверх других элементов
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .site-list__item {
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 500px;
+  }
+}
