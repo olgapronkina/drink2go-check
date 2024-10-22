@@ -15,19 +15,17 @@
 
 html {
   height: 100%;
-  background-color: #f2f2f2;
+  background-color: $lightest-grey;
 }
 
 body {
   min-width: 320px;
-  margin: 0 22px;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: 'Montserrat';
   font-size: 16px;
   line-height: 24px;
   color: $base-black;
+  width: 100%;
 }
 
 .container {
